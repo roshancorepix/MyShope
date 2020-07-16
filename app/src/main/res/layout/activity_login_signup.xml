@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/background"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorAccent"
+    tools:context=".Activity.LoginSignupActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_signup"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:lottie_autoPlay="true"
+        android:layout_marginTop="200dp"
+        android:layout_centerInParent="true"
+        app:lottie_fileName="signup_anim.json"
+        app:lottie_loop="true" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/animation_signup"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_sign_up"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="@string/sign_up"
+                android:textColor="@color/fontColor"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:fontFamily="@font/nunito_regular"
+                android:layout_marginRight="0.5dp"
+                android:background="@drawable/button_left_corner_redius"/>
+
+            <Button
+                android:id="@+id/btn_sign_in"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="@string/sign_in"
+                android:textColor="@color/fontColor"
+                android:fontFamily="@font/nunito_regular"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:layout_marginLeft="0.5dp"
+                android:background="@drawable/button_right_corner_redius"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
